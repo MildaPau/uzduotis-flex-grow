@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #3cb371;;
+}
+main {
+    max-width: 1000px;
+    display: flex;
+    background-color: #3cb371;
+    margin: 0 auto;
+    padding: 25px 20px;
+    font-family: sans-serif;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    /* margin: 30px; */
+}
+section div{
+   flex-grow: 1;
+}
+section:nth-of-type(1){
+    width: 65%;
+    margin-right: 20px;
+}
+/* section:nth-of-type(1) div{
+    flex-grow: 2;
+} */
+section:nth-of-type(2){
+    width: 35%;
+}
+/* section:nth-of-type(1) div{
+    flex-shrink: 1;
+} */
+
+/* section 1 */
+
+.lg-box{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.lg-box .image{
+    width: 100%;
+    height: 450px;  
+}
+.lg-box:nth-of-type(1) .image{
+    background-image: url(image/img1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.lg-box:nth-of-type(2) .image{
+    background-image: url(image/img3.jfif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lg-box article{
+    background-color: white;
+    padding: 20px;
+}
+
+.lg-box article h2{
+    margin-bottom: 15px;
+}
+.lg-box article p{
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.lg-box article .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.lg-box article .box-bottom p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* section 2 */
+
+.sm-box{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+.sm-box .image{
+    width: 100%;
+    height: 190px;  
+}
+
+.sm-box .image{
+    background-image: url(image/img2.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sm-box article{
+    background-color: white;
+    padding: 20px;
+}
+
+.sm-box article h2{
+    margin-bottom: 15px;
+}
+.sm-box article p{
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.sm-box article .box-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+.sm-box article .box-bottom p{
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+/* flex-grow */
+
+.lg-box,
+.sm-box {
+    display: flex;
+    flex-direction: column;
+}
+article .image{
+    flex-grow: 1;
+}
+
+
+
+@media(max-width: 800px) and (min-width: 320px){
+    
+    main{
+        flex-wrap: wrap;
+    }
+    section:nth-of-type(1){
+    width: 100%;
+    margin-right: 0;
+    margin: 0 auto;
+    }
+    section:nth-of-type(2){
+    width: 100%;
+    margin: 0 auto;
+    }
+    
+}
+
